@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape minh thai pham} \\ \vspace{1pt}
+    Dormitory B, Dong Hoa, Di An, Binh Duong \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ (+84) 931777864 ~ \href{mailto:thaipm.261@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{thaipm.261@gmail.com}} ~ 
+    \href{https://github.com/DaZeTw}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/DaZeTw}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Science}{Sep. 2022 -- May 2026}
+      {Bachelor of Data Science}{Ho Chi Minh, Vietnam}
+    \resumeSubheading
+      {GPA: 3.55 (Top 5 among 100)}{}
+      {Got 2 encouraged scholarships}{}
+ \resumeSubheading
+      {IELTS: 7.0}{December 2021}
+      {}{}
+      \vspace{-18pt}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Algorithm Analysis
+                \item Data Analysis
+                \item AWS Cloud Practitioner 
+                \item AWS Solution Architect 
+                \item JavaScript (Udemy)
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+    %
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, C, HTML/CSS, JavaScript} \\
+     \textbf{Developer Tools}{: VS Code, Jupyter, AWS Cloud Platform} \\
+     \textbf{Technologies/Library}{: React.js, Git} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+            \resumeItemListEnd
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{\href{https://dazetw.github.io/Workshop1/}{Cloud Lab AWS Architecture}} $|$ \emph{AWS Cloud, Sanity, Hugo, Github}}{July 2023 - August 2023}
+          \resumeItemListStart
+            \resumeItem{Architected and implemented a scalable website hosting solution on AWS. }
+            \resumeItem{Utilized AWS S3 for robust web asset storage, combined with CloudFront for reduced latency . }
+            \resumeItem{Documented the entire architecture and deployment process for team reference and knowledge transfer. }
+          \resumeItemListEnd 
+          \vspace{-13pt}
+
+           \resumeProjectHeading
+          {\textbf{\href{https://dazetw.netlify.app/}{Portfolio Website}} $|$ \emph{React.js, SCSS}}{June 2023 - August 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a dynamic portfolio website with Sanity API integration for real-time content modification. }
+            \resumeItem{Leveraged React.js for a responsive and interactive UI, ensuring cross-browser compatibility and optimized user experience across devices. }
+            \resumeItem{Seamlessly integrated Sanity.io as the backend CMS for streamlined content management. }
+          \resumeItemListEnd 
+          \vspace{-13pt}
+% \resumeProjectHeading
+%       {\textbf{\href{http://example.com}{Pathfinding Visualizer}} $|$ \emph{JavaScript, HTML, CSS}}{September 2023 - Present}
+%           \resumeItemListStart
+%             \resumeItem{Crafted an interactive tool to visualize various pathfinding algorithms in real-time. }
+%             \resumeItem{Highlighted an array of algorithms including Dijkstra's. }
+%             \resumeItem{Designed for enthusiasts and students to understand algorithm dynamics comprehensively. }
+%           \resumeItemListEnd
+%           % \vspace{-13pt}
+%     \resumeSubHeadingListEnd
+% \vspace{-15pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Home teaching}{May 2022 -- October 2022}
+      {Teaching Assistant}{Da Nang, Vietnam}
+      \resumeItemListStart
+        \resumeItem{Partnered with a 20-year-experienced educator in preparing 5 comprehensive lesson plans per month by organizing materials and ensuring equipment readiness. }
+        \resumeItem{Conducted 2 revision sessions per week for students, addressing topics both in 5-student-group settings and one-on-one interactions. }
+        \resumeItem{Identified student challenges in collaboration with the lead teacher which enhanced performance by 20\%.}
+        \resumeItem{Assisted in managing and overseeing the class schedule to ensure smooth academic proceedings. }
+      \resumeItemListEnd
+      
+
+    \resumeSubheading
+      {Tri Phan Department}{May 2020 -- December 2020}
+      {Math Grader \& Math solver}{Da Nang, Vietnam}
+      \resumeItemListStart
+        \resumeItem{Collaborated closely with 3 educational staff to devise 10 challenging math problems per week tailored for advanced students' examinations. }
+        \resumeItem{Identified and communicated recurring 5 student errors per week, aiding teachers in tailoring their instruction to address common 2 areas of difficulty.}
+        \resumeItem{Assumed responsibility for grading 50 math entrance exams per week of junior-high-school students, ensuring fairness and accuracy in evaluations. }
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+% \vspace{-16pt}
+    \resumeSubHeadingListEnd
+
+
+\end{document}
